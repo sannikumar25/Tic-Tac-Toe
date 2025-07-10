@@ -61,6 +61,9 @@ Click "Toggle Dark Mode" for dark theme.
 
 📸 Screenshots
 # Tic Tac Toe Game 🎮
+<img width="1024" height="1024" alt="screenshort" src="https://github.com/user-attachments/assets/4c21cff9-7034-4634-a40f-2d4b7e2a0f4b" />
+
+
 
 
 A glassmorphic Tic Tac Toe game with AI and beautiful animated bubbles.
@@ -72,7 +75,7 @@ Download ZIP or
 bash
 Copy
 Edit
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/sannikumar25/Tic-Tac-Toe.git
 Open index.html in your browser.
 
 ✅ No additional setup required. Works offline.
