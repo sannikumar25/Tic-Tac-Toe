@@ -1,0 +1,110 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  color: #fff;
+}
+
+h1 {
+  font-size: 3rem;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.7);
+  margin-bottom: 10px;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.05);
+}
+
+.container {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 15px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  border: 2px solid rgba(255,255,255,0.3);
+  font-size: 3rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.cell:hover {
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.1);
+}
+
+#status {
+  margin-top: 15px;
+  font-size: 1.4rem;
+}
+
+.dark-mode {
+  background: linear-gradient(135deg, #0f0f0f, #292929);
+}
+
+.dark-mode h1, 
+.dark-mode #status, 
+.dark-mode button {
+  color: #ddd;
+}
+
+.dark-mode .container {
+  background: rgba(255,255,255,0.03);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.7);
+}
+
+.bubbles {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+}
+
+.bubbles span {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff7eb3, #ff758c, #ffc371);
+  opacity: 0.6;
+}
